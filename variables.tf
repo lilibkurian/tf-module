@@ -46,10 +46,10 @@ variable "egress_ports" {
   }))
   default = [
     {
-      from_port   = "All"
-      to_port     = "All"
+      from_port   = 0
+      to_port     = 0
       protocol    = "-1"
-      cidr_blocks = ["10.0.1.0/32"]
+      cidr_blocks = ["0.0.0.0/0"]
     }
   ]
 }
