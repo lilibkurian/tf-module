@@ -1,9 +1,9 @@
 /*
 resource "aws_elb" "mybalancer" {
-name = "${var.modname}"
+name = "var.modname"
 
-subnets         = ["${var.SubnetId}"]
-security_groups = ["${var.SecGroupId}"]
+subnets         = [var.SubnetId]
+security_groups = [var.SecGroupId]
 
 
 listener {
