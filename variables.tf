@@ -8,6 +8,10 @@ variable SecGroupId {
 description = "this variable doesn't have a default value but it is passed from the main code"
 }
 */
+variable vpcid {
+description = "vpc id"
+}
+
 variable "ingress_ports" {
   #type    = list(map(string))
   type = list(object({
