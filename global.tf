@@ -8,10 +8,15 @@ provider "aws" {
   
 }
 
-variable "aws_region" {
+variable aws_region {
   type        = string
   default     = "us-east-1"
   description = "To which region should the resources be deployed? ie us-east-1, us-west-2, etc"
 }
+
+variable aws_access_key_id {}
+
+variable aws_secret_access_key {}
+
 
 #variable "aws_cred_file" {}
