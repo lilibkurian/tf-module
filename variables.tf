@@ -44,5 +44,12 @@ variable "egress_ports" {
     protocol    = string
     cidr_blocks = list(string)
   }))
-  default = []
+  default = [
+    {
+      from_port   = "All"
+      to_port     = "All"
+      protocol    = "-1"
+      cidr_blocks = ["10.0.1.0/32"]
+    }
+  ]
 }
