@@ -1,3 +1,4 @@
+/*
 variable modname {}
 variable SubnetId {
 default = "subnet-xxxxxxxxx"
@@ -6,7 +7,7 @@ default = "subnet-xxxxxxxxx"
 variable SecGroupId {
 description = "this variable doesn't have a default value but it is passed from the main code"
 }
-
+*/
 variable "ingress_ports" {
   #type    = list(map(string))
   type = list(object({
