@@ -4,7 +4,7 @@ provider "aws" {
   #shared_credentials_file = var.aws_cred_file
   #profile                 = terraform.workspace
   access_key = var.aws_access_key_id
-  aws_secret_access_key = var.aws_secret_access_key
+  secret_key = var.aws_secret_access_key
   
 }
 
