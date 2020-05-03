@@ -32,6 +32,12 @@ variable "ingress_ports" {
       to_port     = 22
       protocol    = "tcp"
       cidr_blocks = ["10.0.1.0/32"]
+    },
+    {
+      from_port   = 1433
+      to_port     = 1433
+      protocol    = "tcp"
+      cidr_blocks = ["10.0.1.0/32"]
     }
   ]
 }
