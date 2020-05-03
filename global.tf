@@ -3,8 +3,8 @@ provider "aws" {
   region                  = var.aws_region
   #shared_credentials_file = var.aws_cred_file
   #profile                 = terraform.workspace
-  #access_key = var.aws_access_key_id
-  #secret_key = var.aws_secret_access_key
+  access_key = TF_VAR_AWS_ACCESS_KEY_ID
+  secret_key = TF_VAR_AWS_SECRET_ACCESS_KEY
   
 }
 
