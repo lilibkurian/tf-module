@@ -9,7 +9,7 @@ description = "this variable doesn't have a default value but it is passed from 
 }
 */
 variable vpcid {
-description = "vpc id"
+description = "vpc id description"
 }
 
 variable "ingress_ports" {

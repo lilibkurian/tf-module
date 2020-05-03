@@ -17,8 +17,10 @@ listener {
 */
 module "sg" {
   source           = "./sg"
-  sg_name          = "Test-SG-1"
-  sg_desc          = "Hi SG How are you"
+
+  sg_name          = "Test-SG how is it going1"
+  sg_desc          = "Hi SG"
+
   sg_vpcid         = var.vpcid
   sg_ingress_ports = var.ingress_ports
   sg_egress_ports  = var.egress_ports
