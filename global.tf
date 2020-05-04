@@ -1,6 +1,6 @@
 provider "aws" {
   version                 = "~> 2.0"
-  region                  = var.region
+  region                  = var.AWS_REGION
   #shared_credentials_file = var.aws_cred_file
   #profile                 = terraform.workspace
   #access_key = var.AWS_ACCESS_KEY_ID
@@ -8,7 +8,7 @@ provider "aws" {
   
 }
 
-variable region {
+variable AWS_REGION {
   type        = string
   #default     = "us-east-1"
   description = "To which region should the resources be deployed? ie us-east-1, us-west-2, etc ..."
