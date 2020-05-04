@@ -12,6 +12,10 @@ variable vpcid {
 description = "vpc id description"
 }
 
+variable nameabc {
+  default = "default-value"
+}
+
 variable "ingress_ports" {
   #type    = list(map(string))
   type = list(object({
