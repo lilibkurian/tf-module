@@ -22,5 +22,4 @@ variable aws_region {
 
 #variable AWS_SECRET_ACCESS_KEY {}
 
-
 #variable "aws_cred_file" {}
