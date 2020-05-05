@@ -16,7 +16,7 @@ listener {
 */
 module "sg" {
   #source           = "./sg"
-  source            = "git@github.com:lilibkurian/terraform-aws-sg.git"
+  source            = "git@github.com/lilibkurian/terraform-aws-sg.git"
 
   sg_name          = "Test-SG how is it going2"
   sg_desc          = var.nameabc
