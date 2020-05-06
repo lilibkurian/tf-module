@@ -4,4 +4,4 @@ variable "sg_vpcid" {}
 variable "sg_ingress_ports" {}
 variable "sg_egress_ports" {}
 
-variables "sg_tags" {}
+variable "sg_tags" {}
