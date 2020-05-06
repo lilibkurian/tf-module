@@ -17,7 +17,7 @@ listener {
 */
 
 locals {
-  tags_sg {
+  tags_sg = {
     Name = "test"
   }
 }
