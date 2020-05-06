@@ -16,6 +16,17 @@ variable nameabc {
   default = "default-value1"
 }
 
+locals {
+  Env = "Dev"
+}
+
+locals {
+  tags_sg = {
+    Env     = local.Env
+    Purpose = "security group for ec2"
+  }
+}
+
 variable "ingress_ports" {
   #type    = list(map(string))
   type = list(object({
