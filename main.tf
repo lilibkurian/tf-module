@@ -21,7 +21,7 @@ module "sg" {
   #source            = "github.com/lilibkurian/terraform-aws-sg"
   source           = "github.com/lilibkurian/tf-module/tree/develop/sg"
   #github.com/lilibkurian/terraform-aws-sg.git
-  sg_name          = "Test-SG how is it going2"
+  sg_name          = "Test-SG how is it going4"
   sg_desc          = var.nameabc
   sg_tags          = local.tags_sg
 
