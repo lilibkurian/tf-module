@@ -33,7 +33,7 @@ module "sg" {
   source  = "app.terraform.io/Lilib/sg/aws"
   version = "1.0.0"
 
-  sg_name          = "Test-SG how is it going2"
+  sg_name          = "Test-SG how is it going3"
   sg_desc          = var.nameabc
   sg_tags          = local.tags_sg
 
