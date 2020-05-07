@@ -17,9 +17,9 @@ listener {
 #https://github.com/lilibkurian/tf-module/tree/master/sg
 
 module "sg" {
-  #source           = "./sg"
+  source           = "./sg"
   #source            = "github.com/lilibkurian/terraform-aws-sg"
-  source           = "github.com/lilibkurian/tf-module/sg"  # tree/develop/sg
+  #source           = "github.com/lilibkurian/tf-module/sg"  # tree/develop/sg
   #github.com/lilibkurian/terraform-aws-sg.git
   sg_name          = "Test-SG how is it going5"
   sg_desc          = var.nameabc
