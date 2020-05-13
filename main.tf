@@ -20,7 +20,8 @@ module "sg" {
   #source           = "./sg"
   #source          = "github.com/lilibkurian/terraform-aws-sg"
   #source          = "github.com/lilibkurian/tf-module/sg"  # tree/develop/sg
-  source          =  "github.com/lilibkurian/terraform-aws-sg?ref=v1.0.7"
+  #source          =  "github.com/lilibkurian/terraform-aws-sg?ref=v1.0.7"
+  source           = "git@gitlab.com:lilib.kurian/terraform-aws-sg.git?ref=v1.0.5"
   #github.com/lilibkurian/terraform-aws-sg.git
   #version          = "v1.0.2"
   sg_name          = "Test-SG how is it going6"
