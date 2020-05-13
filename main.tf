@@ -18,13 +18,15 @@ listener {
 
 module "sg" {
   #source           = "./sg"
-  #source          = "github.com/lilibkurian/terraform-aws-sg"
-  #source          = "github.com/lilibkurian/tf-module/sg"  # tree/develop/sg
-  #source          =  "github.com/lilibkurian/terraform-aws-sg?ref=v1.0.7"
-  source           = "gitlab.com/lilibkurian/terraform-aws-test"
-  
-  #github.com/lilibkurian/terraform-aws-sg.git
-  #version          = "v1.0.2"
+  #source           = "github.com/lilibkurian/terraform-aws-sg"
+  #source           = "github.com/lilibkurian/tf-module/sg"  # tree/develop/sg
+  #source           = "github.com/lilibkurian/terraform-aws-sg?ref=v1.0.7"
+  #source           = "git::https://gitlab.com/lilibkurian/terraform-aws-test.git"
+  #source           = "git@gitlab.com:lilibkurian/terraform-aws-test.git?ref=v1.0.1"
+  source            = "git@gitlab.com:cext-cloud-group/terraform-aws-iam-saml.git?ref=v1.0.1"
+  #source           = "git@gitlab.com:lilib.kurian/terraform-aws-sg.git"
+  #source           = "gitlab.com/lilib.kurian/terraform-aws-sg"                       
+
   sg_name          = "Test-SG how is it going6"
   sg_desc          = var.nameabc
   sg_tags          = local.tags_sg
