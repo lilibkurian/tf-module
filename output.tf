@@ -5,3 +5,13 @@ output "security_group_description_1" {
 output "security_group_description_2" {
   value = var.nameabc
 }
+
+output "security_group_password" {
+  sensitive = true
+  value = var.password
+}
+
+output "security_group_password1" {
+  sensitive = true
+  value = var.password1
+}

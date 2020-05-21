@@ -16,6 +16,11 @@ variable nameabc {
   default = "default-value1"
 }
 
+variable "password" {
+  default = "ABCXYZ"
+}
+
+
 locals {
   Env = "Dev"
 }
