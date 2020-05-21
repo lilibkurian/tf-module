@@ -1,7 +1,3 @@
-output "security_group_name" {
-  value = module.sg.sg_name
-}
-
-output "security_group_vpcid" {
-  value = module.sg.sg_vpc_id
+output "security_group_description" {
+  value = module.sg.security_group_description
 }
